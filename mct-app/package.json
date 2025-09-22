@@ -1,0 +1,20 @@
+{
+  "name": "mct-app",
+  "version": "1.0.0",
+  "description": "Pocket Guide to a Calmer Mind - MCT Application",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "server:dev": "cd server && npm run dev",
+    "client:dev": "cd client && npm run dev",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "build": "cd client && npm run build && cd ../server && npm run build",
+    "start": "cd server && npm start"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": ["MCT", "therapy", "mental-health"],
+  "author": "",
+  "license": "ISC"
+}
